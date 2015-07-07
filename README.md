@@ -26,17 +26,33 @@ An example of the thumbnail slider markup is shown below:
 ```html
 <div id="my_thumbnail_slider">
     <div class="slides">
-        <div class="slide active"><img src="images/sample_image_1.jpg" alt="" /></div>
-        <div class="slide"><img src="images/sample_image_2.jpg" alt="" /></div>
-        <div class="slide"><img src="images/sample_image_3.jpg" alt="" /></div>
-        <div class="slide"><img src="images/sample_image_4.jpg" alt="" /></div>
+        <div class="slide active">
+            <img src="images/sample_image_1.jpg" alt="" />
+        </div>
+        <div class="slide">
+            <img src="images/sample_image_2.jpg" alt="" />
+        </div>
+        <div class="slide">
+            <img src="images/sample_image_3.jpg" alt="" />
+        </div>
+        <div class="slide">
+            <img src="images/sample_image_4.jpg" alt="" />
+        </div>
     </div>
-    <ul class="controls">
-        <li class="control active"><a href="#"><img src="images/sample_image_1.jpg" alt="" /></a></li>
-        <li class="control"><a href="#"><img src="images/sample_image_2.jpg" alt="" /></a></li>
-        <li class="control"><a href="#"><img src="images/sample_image_3.jpg" alt="" /></a></li>
-        <li class="control"><a href="#"><img src="images/sample_image_4.jpg" alt="" /></a></li>
-    </ul>
+    <div class="controls">
+        <span class="control active">
+            <img src="images/sample_image_1.jpg" alt="" />
+        </span>
+        <span class="control">
+            <img src="images/sample_image_2.jpg" alt="" />
+        </span>
+        <span class="control">
+            <img src="images/sample_image_3.jpg" alt="" />
+        </span>
+        <span class="control">
+            <img src="images/sample_image_4.jpg" alt="" />
+        </span>
+    </div>
 </div>
 ```
 
