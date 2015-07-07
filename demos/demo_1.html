@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery thumb slider plugin - DEMO #2</title>
+
+	<!-- css -->
+	<link type="text/css" media="all" href="../css/main.css" rel="stylesheet" />
+	<link type="text/css" media="all" href="../css/thumb_slider.css" rel="stylesheet" />
+
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/thumb_slider.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="whitebox">
+			<div id="breadcrumbs">
+				&lt;&lt;&nbsp;<a href="../index.html" title="Thumb slider DEMO index">DEMO index</a>
+			</div>
+			<h1>Thumb slider plugin - DEMO #2</h1>
+			<p>
+				Below is a demo of the thumb slider plugin from the public GitHub project found here: <a href="https://github.com/mlmedia/thumb_slider" title="Thumb slider plugin on GitHub" target="_blank">https://github.com/mlmedia/thumb_slider</a>.
+			</p>
+			<p>
+				<i>All public domain images are courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons" target="_blank">Wikimedia Commons</a>.</i>
+			</p>
+			<hr />
+			<div id="my_thumb_slider">
+				<div class="slides">
+					<div class="slide active"><img src="../images/sample_image_1.jpg" alt="" /></div>
+					<div class="slide"><img src="../images/sample_image_2.jpg" alt="" /></div>
+					<div class="slide"><img src="../images/sample_image_3.jpg" alt="" /></div>
+					<div class="slide"><img src="../images/sample_image_4.jpg" alt="" /></div>
+				</div>
+				<ul class="controls">
+					<li class="control active"><a href="#"><img src="../images/sample_image_1.jpg" alt="" /></a></li>
+					<li class="control"><a href="#"><img src="../images/sample_image_2.jpg" alt="" /></a></li>
+					<li class="control"><a href="#"><img src="../images/sample_image_3.jpg" alt="" /></a></li>
+					<li class="control"><a href="#"><img src="../images/sample_image_4.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+		    	/* define $ as jQuery just in case */
+		    	( function( $ )
+		        {
+		    		/* doc ready */
+		    		$( function( )
+		            {
+		    			/* init the plugin */
+		    			$( '#my_thumb_slider' ).thumb_slider( );
+		    		});
+		    	})( jQuery );
+		    </script>
+			<hr />
+			<p>
+				<i>All public domain images are courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons" target="_blank">Wikimedia Commons</a>.</i>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
