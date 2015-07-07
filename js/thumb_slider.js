@@ -30,16 +30,18 @@
 			thumb_slider.show( );
 		});
 
+		/* add the cursor to the control element (so it acts like an anchor link) */
+		controls.css({'cursor':'pointer'});
+
 		/* click the thumb */
-		thumb_slider.on( 'click', '.control a', function( e )
+		thumb_slider.on( 'click', '.control', function( e )
 		{
 			/* set active class on the clicked thumb */
 			controls.removeClass( 'current' ).css({ 'opacity':0.5 });
-			parent_control = $( this ).parents( '.control' );
-			parent_control.addClass( 'current' ).css({ 'opacity':1 });
+			$( this ).addClass( 'current' ).css({ 'opacity':1 });
 
 			/* grab the target thumb and show it */
-			var target_index 	= $( this ).parents( '.control' ).index( );
+			var target_index 	= $( this ).index( );
 			var target_el		= thumb_slider.find( '.slide:eq(' + target_index + ')' );
 			slides.hide( );
 			target_el.show( );
