@@ -11,7 +11,7 @@
 		var thumb_slider = this;
 		var slides = thumb_slider.find( '.slide' );
 		var controls = thumb_slider.find( '.controls .control' );
-		var active_controls = controls.find( '.current' );
+		var active_controls = controls.find( '.active' );
 		var active_control = active_controls.first( ).length > 0 ? active_controls.first( ) : thumb_slider.find( '.control:eq(0)' );
 		var target_index = active_control.index( );
 		var target_el = thumb_slider.find( '.slide:eq(' + target_index + ')' );
@@ -21,8 +21,8 @@
 		$( window ).load( function( )
 		{
 			/* grab the active slide and hide all other slides */
-			controls.removeClass( 'current' ).css({ 'opacity':0.5 });
-			active_control.addClass( 'current' ).css({ 'opacity':1 });;
+			controls.removeClass( 'active' );
+			active_control.addClass( 'active' );
 			slides.hide( );
 			target_el.show( );
 
@@ -37,8 +37,8 @@
 		thumb_slider.on( 'click', '.control', function( e )
 		{
 			/* set active class on the clicked thumb */
-			controls.removeClass( 'current' ).css({ 'opacity':0.5 });
-			$( this ).addClass( 'current' ).css({ 'opacity':1 });
+			controls.removeClass( 'active' );
+			$( this ).addClass( 'active' );
 
 			/* grab the target thumb and show it */
 			var target_index 	= $( this ).index( );
