@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery thumb slider plugin - DEMO #2</title>
 
@@ -12,8 +13,9 @@
 
 	<!-- js -->
 	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../js/thumb_slider.js"></script>
+	<script type="text/javascript" src="../js/thumb_slider.js"></script>
 </head>
+
 <body>
 	<div class="container">
 		<div class="whitebox">
@@ -29,47 +31,45 @@
 			</p>
 			<hr />
 			<div id="my_thumb_slider">
-			    <div class="slides">
-			        <div class="slide">
-			            <img src="../images/sample_image_1.jpg" alt="" />
-			        </div>
-			        <div class="slide">
-			            <img src="../images/sample_image_2.jpg" alt="" />
-			        </div>
-			        <div class="slide">
-			            <img src="../images/sample_image_3.jpg" alt="" />
-			        </div>
-			        <div class="slide">
-			            <img src="../images/sample_image_4.jpg" alt="" />
-			        </div>
-			    </div>
-			    <div class="controls">
-			        <span class="control">
-			            <img src="../images/sample_image_1_thumb.jpg" alt="" />
-			        </span>
-			        <span class="control">
-			            <img src="../images/sample_image_2_thumb.jpg" alt="" />
-			        </span>
-			        <span class="control">
-			            <img src="../images/sample_image_3_thumb.jpg" alt="" />
-			        </span>
-			        <span class="control">
-			            <img src="../images/sample_image_4_thumb.jpg" alt="" />
-			        </span>
-			    </div>
+				<div class="slides">
+					<div class="slide">
+						<img src="../images/sample_image_1.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../images/sample_image_2.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../images/sample_image_3.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="../images/sample_image_4.jpg" alt="" />
+					</div>
+				</div>
+				<div class="controls">
+					<span class="control">
+						<img src="../images/sample_image_1_thumb.jpg" alt="" />
+					</span>
+					<span class="control">
+						<img src="../images/sample_image_2_thumb.jpg" alt="" />
+					</span>
+					<span class="control">
+						<img src="../images/sample_image_3_thumb.jpg" alt="" />
+					</span>
+					<span class="control">
+						<img src="../images/sample_image_4_thumb.jpg" alt="" />
+					</span>
+				</div>
 			</div>
 			<script type="text/javascript">
-		    	/* define $ as jQuery just in case */
-		    	( function( $ )
-		        {
-		    		/* doc ready */
-		    		$( function( )
-		            {
-		    			/* init the plugin */
-		    			$( '#my_thumb_slider' ).thumb_slider( );
-		    		});
-		    	})( jQuery );
-		    </script>
+				/* define $ as jQuery just in case */
+				(function($) {
+					/* doc ready */
+					$(function() {
+						/* init the plugin */
+						$('#my_thumb_slider').thumb_slider();
+					});
+				})(jQuery);
+			</script>
 			<hr />
 			<p>
 				<i>All public domain images are courtesy of <a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons" target="_blank">Wikimedia Commons</a>.</i>
@@ -77,4 +77,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
