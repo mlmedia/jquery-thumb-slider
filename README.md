@@ -1,4 +1,4 @@
-# Thumb slider plugin
+# Thumb slider plugin (jQuery)
 
 This jQuery plugin creates an image slider with thumbnail image navigation.  Thumb sliders are useful for displaying multiple images in a small space, as in a product detail page.
 
