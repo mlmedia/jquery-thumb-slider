@@ -9,11 +9,15 @@
 	margin: 0;
 	padding: 0;
 }
-*, :before, :after {
+
+*,
+:before,
+:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 body {
 	background-color: #f3f3f3;
 	color: #333;
@@ -22,14 +26,20 @@ body {
 	line-height: 1.6em;
 	position: relative;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
 	line-height: 1.4em;
 	margin: .4em 0 .6em;
 	padding: 0;
 }
+
 p {
 	margin-bottom: 1.4em;
 }
+
 hr {
 	border: 0;
 	border-top: 1px solid #ddd;
@@ -43,6 +53,7 @@ hr {
 	padding: 1em;
 	width: 960px;
 }
+
 .whitebox {
 	-moz-border-radius: .4em;
 	-moz-box-shadow: 0 0 .5em #ccc;
@@ -64,5 +75,7 @@ hr {
 		width: 100%;
 	}
 }
+
 @media max-width790px {}
+
 @media max-width500px {}

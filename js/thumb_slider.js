@@ -2,9 +2,9 @@
  * jQuery plugin for a thumb slider
  */
 /* define $ as jQuery just in case */
-(function($) {
+(function ($) {
 	/* thumb slideshow - my custom plugin */
-	$.fn.thumb_slider = function() {
+	$.fn.thumb_slider = function () {
 		/* set vars */
 		var thumb_slider = this;
 		var slides = thumb_slider.find('.slide');
@@ -16,7 +16,7 @@
 
 		/* set the css */
 		thumb_slider.hide();
-		$(window).load(function() {
+		$(window).load(function () {
 			/* grab the active slide and hide all other slides */
 			controls.removeClass('active');
 			active_control.addClass('active');
@@ -33,7 +33,7 @@
 		});
 
 		/* click the thumb */
-		thumb_slider.on('click', '.control', function(e) {
+		thumb_slider.on('click', '.control', function (e) {
 			/* set active class on the clicked thumb */
 			controls.removeClass('active');
 			$(this).addClass('active');

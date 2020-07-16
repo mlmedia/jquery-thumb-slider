@@ -9,6 +9,7 @@
 	-khtml-opacity: 0.5;
 	opacity: 0.5;
 }
+
 #my_thumb_slider .control.active {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
